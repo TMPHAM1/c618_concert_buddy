@@ -51,8 +51,8 @@ class SearchConcerts extends Component {
                 <div className="bottom-content">
                     <form onSubmit={(event) => { this.handleFormSubmit(event) }}>
                         <div className="search-inputs">
-                            <input type="text" className="standard-input" placeholder="Enter City or Zip Code" name="city_zip" value={city_zip} onChange={this.handleChange} />
-                            <input type="text" className="standard-input" placeholder="Search by Artist" name="artist" value={artist} onChange={this.handleChange} />
+                            <input type="text" className="standard-input" autocomplete="off" placeholder="Enter City or Zip Code" name="city_zip" value={city_zip} onChange={this.handleChange} />
+                            <input type="text" className="standard-input" autocomplete="off" placeholder="Search by Artist" name="artist" value={artist} onChange={this.handleChange} />
                             <div className="dropdown-center">
                                 <select className="dropdown" name="genre" name="genre" value={genre} onChange={this.handleChange} >
                                     <option value="null">Search by Genre</option>

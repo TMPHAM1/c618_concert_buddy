@@ -83,8 +83,8 @@ class SignUp extends Component {
                 <div className="signup">
                     <form id="signupForm" onSubmit={(event) => { this.handleFormSubmit(event) }}>
                         <div className="signup-inputs">
-                            <input type="text" className="signup-input" placeholder="Enter Email Address" name="email" value={email} onChange={this.handleChange} />
-                            <input type="text" className="signup-input" placeholder="Enter Your Name" name="name" value={name} onChange={this.handleChange} />
+                            <input type="text" className="signup-input" autocomplete="off" placeholder="Enter Email Address" name="email" value={email} onChange={this.handleChange} />
+                            <input type="text" className="signup-input" autocomplete="off" placeholder="Enter Your Name" name="name" value={name} onChange={this.handleChange} />
                         </div>
                         <div className="signup-inputs">
                             <input type="text" style={this.state.form.matching ? correctStyle : incorrectStyle} className="signup-input" placeholder="Choose Password" name="password" type="password" value={password} onChange={this.handleChange} />

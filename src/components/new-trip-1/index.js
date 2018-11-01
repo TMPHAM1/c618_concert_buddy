@@ -18,7 +18,7 @@ class NewTrip1 extends Component {
             <div>
                 <div>
                     <label>{props.label}</label>
-                    <input className="standard-input" {...props.input} type="text" />
+                    <input className="standard-input" {...props.input} type="text" autocomplete="off" />
                     <p>{props.meta.touched && props.meta.error}</p>
                 </div>
             </div>
@@ -143,7 +143,7 @@ class NewTrip1 extends Component {
                     <div className="tripname">
                         <form onSubmit={handleSubmit(this.handleAddItem)}>
                             <div>Name Your Trip</div>
-                            <Field name="trip_name" id="trip_name" component={this.renderInput} />
+                            <Field name="trip_name" id="trip_name" autocomplete="off" component={this.renderInput} />
                             <div className="buttons">
                                 <button className="btn pink-btn">CREATE TRIP!</button>
                             </div>

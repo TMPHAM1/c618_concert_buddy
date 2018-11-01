@@ -66,11 +66,11 @@ class AddResponsibility extends Component {
                     <form onSubmit={(event) => { this.handleFormSubmit(event) }}>
                         <div className="inputs">
                             <div><label>Responsibility</label></div>
-                            <input className="standard-input" type="text" name="title" value={title} placeholder="Responsibility" onChange={this.handleChange} />
+                            <input className="standard-input" type="text" name="title" value={title} autocomplete="off" placeholder="Responsibility" onChange={this.handleChange} />
                             <div>
                                 <label>Person Responsible</label>
                             </div>
-                            <input className="standard-input" type="text" name="name" value={name} placeholder="Person Responsible" onChange={this.handleChange} />
+                            <input className="standard-input" type="text" name="name" value={name} autocomplete="off" placeholder="Person Responsible" onChange={this.handleChange} />
                         </div>
                         <textarea className="standard-textarea" name="details" rows="10" value={details} placeholder="Add Details" onChange={this.handleChange}></textarea>
                         <div className="buttons"><button className="pink-btn">ADD</button></div>

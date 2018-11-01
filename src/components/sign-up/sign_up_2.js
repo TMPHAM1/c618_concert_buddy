@@ -40,8 +40,8 @@ class SignUp extends Component {
                 <div className="signup">
                     <form onSubmit={handleSubmit(this.register)}>
                         <div className="signup-inputs">
-                            <Field className="signup-input" name="email" component={Input} label="Email" />
-                            <Field className="signup-input" name="name" component={Input} label="Name" />
+                            <Field className="signup-input" name="email" autocomplete="off" component={Input} label="Email" />
+                            <Field className="signup-input" name="name" autocomplete="off" component={Input} label="Name" />
                             <Field type="password" className="signup-input signup" name="password" component={Input} label="Password" />
                             <Field type="password" className="signup-input signup" name="confirmPassword" component={Input} placeholder="Confirm Password" label="Confirm Password" />
                         </div>
